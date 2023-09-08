@@ -91,3 +91,27 @@ h4{
     padding: 0.5rem 0;
     font-weight: 700;
 }
+@media (min-width: 800px) {
+    body{
+        .desktop{
+            display: block;
+        }
+        .mobile{
+            display: none;
+        }
+    }
+    nav ul{
+        display: flex !important;
+        list-style-type: none;
+        gap: 1.5rem;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 8fr 2fr;
+        gap: 2rem;
+    }
+    #articles{
+        grid-column: 1/3;
+        display: flex;
+    }
+}
